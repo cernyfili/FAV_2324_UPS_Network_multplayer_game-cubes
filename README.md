@@ -1,4 +1,4 @@
-# FAV_2324_UPS_Network_multplayer_game-cubes
+# Network_multplayer_game-cubes
 
 Multiplayer “cubes/dice” game with a **Go server** and a **Python client**. The project focuses on network communication, message parsing, and a simple game/state workflow.
 
@@ -14,11 +14,11 @@ Multiplayer “cubes/dice” game with a **Go server** and a **Python client**. 
     - **Server Listen** — main loop that listens for messages and dispatches processing
 - `GameClient/` — Python client implementation
 
-Documentation lives under `GameServer/docs/`:
+Main documantation is saved here [docs/UPS_semestralka_dokumentace_ZS_23_2420(1).pdf](https://github.com/cernyfili/FAV_2324_UPS_Network_multplayer_game-cubes/blob/master/docs/UPS_semestr%C3%A1lka_dokumentace_ZS_23_24%20(1).pdf)
+
+Documentation for server lives under `GameServer/docs/`:
 - `docs/server_stavy.md` — protocol + commands + finite automata diagrams
 - `docs/komunikacni_protokol.md` — high-level protocol notes (client/server events)
-- `docs/wiki/multhreading_go.md` — Go concurrency notes (goroutines/channels/mutex)
-- `docs/TODO.md` — project TODO list
 
 ## Tech stack
 
@@ -97,14 +97,3 @@ For the full list, formats, and the player finite automata, see:
    - `make`
 
 > Note: exact make targets depend on the Makefiles in `GameServer/` and `GameClient/`.
-
-## Development notes
-
-- If you modify the protocol, update:
-  - `GameServer/docs/server_stavy.md`
-  - `GameServer/docs/komunikacni_protokol.md`
-- If you add new commands, keep IDs consistent across client/server and document them.
-
-## License
-
-Add license information here (not specified yet).
